@@ -207,7 +207,35 @@ Link if you encounter a paywall: https://archive.is/srKHV or https://web.archive
 
 Consider, for example, concepts of fariness, inequality, social structures, marginalization, intersection of technology and society, etc.
 
+Response: 
+In my daily life, most databases I have encountered seem to embody the values of efficiency and fairness. 
+However, sometimes due to being outdated or a lack of consideration, these databases can actually reinforce 
+social inequality and unfairness instead. One example of the value of efficiency is using quantified numbers for representation. 
+In some cross-national ID systems, you must convert your first and last name into coded numbers, 
+but this may not be possible for people with less common names, and some systems don't have numbers to represent them. 
+Luckily, this type of information is often collected as optional, so this is less concerning. 
 
+Another example of unfairness or lack of inclusion/inclusivity is that, in some national election surveys I’ve encountered, 
+the category of religion for a citizen remains largely limited to different branches of Christianity, 
+but other religions are either omitted or present without details. 
+This may raise concern when non-Christian participants filling out the questionnaire feel less included,
+and hence marginalised, since it is supposed to be a nationwide survey. 
+This type of survey should be updated regularly, considering the demographic changes of a country. 
+
+The last example is the Correlates of War database (CoW). 
+It is a dataset in Political Science that is widely used to research war but it has been critisized 
+that for excluding or undercounting deaths from colonization. This is an issue more of a measurement. 
+In the CoW database, to be classified as a war, a conflict must result in at least 1k battle-related fatalities per year. 
+However, this definition excludes deaths from starvation, forced labor, disease, and systemic deprivation, 
+which were the primary drivers of mortality during colonization.
+
+In short, similar to the NADRA’s system in the reading assigned, most databases embodies the view from the majority 
+view of the socieoty or the government, and often project the mainstream social expectation of a certain,given temporal-spatial period. 
+In the case of NADRA, it is the strict regulation of marriage and family kinship expectations in Pakistan; 
+in my examples, it is the common names, previous major religions, and settlers' definition of war that 
+did not include colonization. Databases, nevertheless, are an enhancement of human perception; 
+hence it is important to raise awareness when designing them and always keep leeway 
+and flexibility to make changes less path-dependent and easier to adopt. 
 ```
 Your thoughts...
 ```

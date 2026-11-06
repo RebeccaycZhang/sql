@@ -34,7 +34,7 @@ SELECT
     COALESCE(product_qty_type, "unit") || ')'
 FROM product;
 
----END QUERY
+--END QUERY
 
 
 --Windowed Functions
@@ -79,8 +79,6 @@ FROM (
     FROM customer_purchases
 ) AS ranked_visits
 WHERE visit_number = 1;
-
-
 
 --END QUERY
 

@@ -24,15 +24,21 @@ All the other rows will remain the same. */
 
 --QUERY 1
 
-SELECT 
+SELECT
 product_name || ', ' || product_size|| ' (' || product_qty_type || ')'
 FROM product;
 
-SELECT
+SELECT *
+FROM product
+WHERE product_size IS NULL   ---identifying the nulls
+   OR product_qty_type IS NULL;
+   
+   SELECT
     product_name || ', ' ||
-    COALESCE(product_size, " ") || ' (' ||
-    COALESCE(product_qty_type, "unit") || ')'
+    COALESCE(product_size, '') || ' (' ||
+    COALESCE(product_qty_type, 'unit') || ')'
 FROM product;
+
 
 --END QUERY
 

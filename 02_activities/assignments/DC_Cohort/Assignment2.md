@@ -3,7 +3,7 @@
 🚨 **Please review our [Assignment Submission Guide](https://github.com/UofT-DSI/onboarding/blob/main/onboarding_documents/submissions.md)** 🚨 for detailed instructions on how to format, branch, and submit your work. Following these guidelines is crucial for your submissions to be evaluated correctly.
 
 #### Submission Parameters:
-* Submission Due Date: `April 07, 2026`
+* Submission Due Date: `Nov 06, 2026`
 * Weight: 70% of total grade
 * The branch name for your repo should be: `assignment-two`
 * What to submit for this assignment:
@@ -35,7 +35,7 @@ Steps to complete this part of the assignment:
 
 ###  Design a Logical Model
 
-#### Prompt 1
+#### Prompt 1 ✓
 Design a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. 
@@ -48,16 +48,40 @@ There are several tools online you can use, I'd recommend [Draw.io](https://www.
 
 **HINT:** You do not need to create any data for this prompt. This is a conceptual model only. 
 
-#### Prompt 2
+#### Prompt 2 ✓
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
 
-#### Prompt 3
+#### Prompt 3 ✓
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2? 
 
 **HINT:** search type 1 vs type 2 slowly changing dimensions. 
 
 ```
-Your answer...
+Response:Overwrite is type1, and the one retains changes is type2. 
+**Type1: overwrite 
+CUSTOMER_ADDRESS
+- address_id
+- customer_id
+- street
+- city
+- province
+- postal_code
+- country
+
+
+**Type2: keeping changes
+CUSTOMER_ADDRESS
+- address_id
+- customer_id
+- street
+- city
+- province
+- postal_code
+- country
+- valid from
+- valid till
+- previous address
+
 ```
 
 ***
@@ -192,5 +216,28 @@ Consider, for example, concepts of labour, bias, LLM proliferation, moderating c
 
 
 ```
-Your thoughts...
+Response: In Boykis's story, the key message is that machine learning, 
+database and AI training are not conducted by machines themselves. 
+Instead, these processes involve human labor to make decisions. 
+There are several ethical issues here. First, is the human biases that may result in unfairness. 
+In Dr Li’s example, the work of tagging images were first conducted by the university students, 
+then outsourced to the Amazone. Quality labour is one concern, 
+and the other is that these online works may not be trainned enough to make deliberate choice when they do the tagging. 
+Also, it is possible that certain population of certain features were making the selection, 
+hence the process is exclusive to people who has spare time to work as Amazone Turks, 
+having digital accesses, speaking English etc.  
+In this regard, human judgments and pre-existing assumptions may introduce racial, gender, and cultural biases into AI training data. 
+The second concern is with the LLM proliferation, and given that companies are profit-driven, 
+the pre-existing structure and models are difficult to change the existing problems. 
+For example, Boykis mentioned that Hinton used the existing ImageNet database to train the AI deep neural network. 
+Once a tehcnology is adopted, it is easier to accpet than abandon despite its existing problems. 
+The third issue is about privacy, in those data training, while they used public avaiable sources, 
+but being publicized does not necessairly equalise the consent. 
+Some people and their work may accidently appear in the photographs, 
+but be used in the training and may appear in the AI search outputs. 
+They might not even know what their work or photos being used to training what and for what purpose.
+That said, it is hard to foretell these issues and their real-world effect while creating them. 
+It is helpful to make the design and structure flexible so when the problem emerges, 
+through righteous institutions, changes and updates can be made to create positive social progress.
+
 ```
